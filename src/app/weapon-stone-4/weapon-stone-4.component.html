@@ -1,0 +1,27 @@
+<div class="calculator">
+    <h1>Weapon and Elemental Stone </h1>
+    <div class="inputs">
+        <div class="input-group">
+            <label for="a">Enter the value of a:</label>
+            <input type="number" autocomplete="off" id="a" name="a" [(ngModel)]="a">
+        </div>
+        <div class="input-group">
+            <label for="b">Enter the value of b:</label>
+            <input type="number" autocomplete="off" id="b" name="b" [(ngModel)]="b">
+        </div>
+        <div class="input-group">
+            <label for="c">Enter the value of c:</label>
+            <input type="number" autocomplete="off" id="c" name="c" [(ngModel)]="c">
+        </div>
+        <div class="input-group">
+            <label for="d">Enter the value of d:</label>
+            <input type="number" autocomplete="off" id="d" name="d" [(ngModel)]="d">
+        </div>
+        <button class="calculate-btn" (click)="calculate()">Calculate</button>
+    </div>
+    <div class="result">
+        <p>The result is: {{ result }}</p>
+        <button class="clear-btn" (click)="clear()">Clear</button>
+    </div>
+  </div>
+  

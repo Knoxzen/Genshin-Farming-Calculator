@@ -1,0 +1,37 @@
+.navbar {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+.calc {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+.webise-name {
+    margin: 0 auto;
+}
+
+.calculator-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .module-selector {
+    margin-bottom: 20px;
+  }
+  
+  .module-selector button {
+    margin-right: 10px;
+  }
+  
