@@ -6,34 +6,81 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './weapon-stone-4.component.html',
-  styleUrl: './weapon-stone-4.component.css'
+  styleUrl: './weapon-stone-4.component.css',
 })
 export class WeaponStone4Component {
-  a: number | undefined;
-  b: number | undefined;
-  c: number | undefined;
-  d: number | undefined;
-  result: number | null = null;
+  green: number | undefined;
+  blue: number | undefined;
+  purple: number | undefined;
+  gold: number | undefined;
+  green1: number | undefined;
+  blue1: number | undefined;
+  purple1: number | undefined;
+  gold1: number | undefined;
+  green2: number | undefined;
+  blue2: number | undefined;
+  purple2: number | undefined;
+  gold2: number | undefined;
+  green3: number | undefined;
+  blue3: number | undefined;
+  purple3: number | undefined;
+  gold3: number | undefined;
 
-  calculate(): void {
-    if (this.a !== undefined && this.b !== undefined && this.c !== undefined && this.d !== undefined) {
-      if (this.a === 0 && this.b === 0 && this.c === 0 && this.d === 0) {
+  calc(): void {
+    if (
+      this.green !== undefined &&
+      this.blue !== undefined &&
+      this.purple !== undefined &&
+      this.gold !== undefined
+    ) {
+      if (
+        this.green === 0 &&
+        this.blue === 0 &&
+        this.purple === 0 &&
+        this.gold === 0
+      ) {
         // Handle division by zero error
-        this.result = null;
-      } else {
-        this.result = Math.floor(((this.a/3 + this.b)/3 + this.c)/3 + this.d);
+        this.green = undefined;
+        this.blue = undefined;
+        this.purple = undefined;
+        this.gold = undefined;
+      }
+      // Main Logic for Calculating blue Mats
+      else {
+        this.blue1 = Math.floor(this.green / 3 + this.blue);
+        this.green1 = this.green % 3;
+        this.purple1 = this.purple;
+        this.gold1 = this.gold;
+
+        this.purple2 = Math.floor((this.green / 3 + this.blue) / 3 + this.purple);
+        this.blue2 = Math.floor(this.green / 3 + this.blue) % 3;
+        this.green2 = this.green % 3;
+        this.gold2 = this.gold;
+
+        this.gold3 = Math.floor((this.purple2)/3 + this.gold);
+        this.purple3 = Math.floor((this.purple2) % 3);
+        this.green3 = this.green2;
+        this.blue3 = this.blue2;
       }
     } else {
-      // Handle case where not all values are defined
-      this.result = null;
+      this.green = undefined;
+      this.blue = undefined;
+      this.purple = undefined;
+      this.gold = undefined;
     }
   }
-
   clear(): void {
-    this.a = undefined;
-    this.b = undefined;
-    this.c = undefined;
-    this.d = undefined;
-    this.result = null;
+    this.green = undefined;
+    this.blue = undefined;
+    this.purple = undefined;
+    this.gold = undefined;
+    this.green1 = undefined;
+    this.blue1 = undefined;
+    this.purple1 = undefined;
+    this.gold1 = undefined;
+    this.green2 = undefined;
+    this.blue2 = undefined;
+    this.purple2 = undefined;
+    this.gold2 = undefined;
   }
 }
