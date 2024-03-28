@@ -3,16 +3,13 @@
         <div class="calculator">
             <div class="inputs">
                 <div class="input-group">
-                    <label for="grey">Enter the value of Grey:</label>
-                    <input type="number" autocomplete="off" id="grey" name="grey" [(ngModel)]="grey">
+                    <input class="greyC" type="number" autocomplete="off" id="grey" name="grey" [(ngModel)]="grey">
                 </div>
                 <div class="input-group">
-                    <label for="green">Enter the value of Green:</label>
-                    <input type="number" autocomplete="off" id="green" name="green" [(ngModel)]="green">
+                    <input class="greenC" type="number" autocomplete="off" id="green" name="green" [(ngModel)]="green">
                 </div>
                 <div class="input-group">
-                    <label for="blue">Enter the value of Blue:</label>
-                    <input type="number" autocomplete="off" id="blue" name="blue" [(ngModel)]="blue">
+                    <input class="blueC" type="number" autocomplete="off" id="blue" name="blue" [(ngModel)]="blue">
                 </div>
             </div>
             <div class="Buttonset">
@@ -21,26 +18,29 @@
             </div>
         </div>
         <div class="ResBox">
-            <div class="Box1">
-                <div class="Box">
-                    <p>grey {{ grey1 }}</p>
+            <div class="whiteBox">
+                <div class="boxGrid">
+                    <div class="boxgrey Box">
+                        <p>{{ grey1 }}</p>
+                    </div>
+                    <div class="boxgreen Box ">
+                        <p>{{ green1 }}</p>
+                    </div>
+                    <div class="boxblue Box">
+                        <p>{{ blue1 }}</p>
+                    </div>
                 </div>
-                <div class="Box">
-                    <p>green {{ green1 }}</p>
-                </div>
-                <div class="Box">
-                    <p>blue {{ blue1 }}</p>
-                </div>
-            </div>
-            <div class="Box1">
-                <div class="Box">
-                    <p>{{ grey2 }}</p>
-                </div>
-                <div class="Box">
-                    <p>{{ green2 }}</p>
-                </div>
-                <div class="Box">
-                    <p>{{ blue2 }}</p>
+                <div class="divider"></div>
+                <div class="boxGrid">
+                    <div class="boxgrey Box">
+                        <p>{{ grey2 }}</p>
+                    </div>
+                    <div class="boxgreen Box">
+                        <p>{{ green2 }}</p>
+                    </div>
+                    <div class="boxblue Box">
+                        <p>{{ blue2 }}</p>
+                    </div>
                 </div>
             </div>
         </div>
