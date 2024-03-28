@@ -1,5 +1,5 @@
-<div class="mainMain">
-    <div class="Main">
+<div class="Main">
+    <div class="mainContainer">
         <div class="calculator">
             <div class="inputs">
                 <div class="input-group">
@@ -19,25 +19,20 @@
                 <button class="calculate-btn" (click)="ResGreen()">Calculate</button>
                 <button class="clear-btn" (click)="clear()">Clear</button>
             </div>
-    
         </div>
-        <!-- <div class="result">
-            <p>The result is: {{ result }}</p>
-            
-        </div> -->
         <div class="ResBox">
             <div class="Box1">
                 <div class="Box">
-                    <p>{{ grey1 }}</p>
+                    <p>grey {{ grey1 }}</p>
                 </div>
                 <div class="Box">
-                    <p>{{ green1 }}</p>
+                    <p>green {{ green1 }}</p>
                 </div>
                 <div class="Box">
-                    <p>{{ blue1 }}</p>
+                    <p>blue {{ blue1 }}</p>
                 </div>
             </div>
-            <div class="Box2">
+            <div class="Box1">
                 <div class="Box">
                     <p>{{ grey2 }}</p>
                 </div>

@@ -1,0 +1,50 @@
+.Main{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+.mainContainer{
+    display: flex;
+    width: 55%;
+}
+.calculator{
+    background-color: rgb(102, 81, 81);
+    
+}
+
+.inputs{
+    display: flexbox;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+
+input{
+    background-color: bisque;
+}
+
+.input-group{
+    display: inline-block;
+    background-color: aqua;
+}
+
+.Buttonset{
+    display: flex;
+    align-items: flex-end;
+}
+
+.ResBox{
+    background-color: red;
+}
+
+.Box{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: rgb(36, 197, 57);
+}
+
+.Box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
