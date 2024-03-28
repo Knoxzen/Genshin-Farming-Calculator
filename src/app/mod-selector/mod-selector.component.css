@@ -1,27 +1,26 @@
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: blue;
 }
 
-.module-selector{
+.module-selector {
   height: 95px;
   width: 55%;
-  
 }
 
-.buttonSet{
+.buttonSet {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 95px;
   border-color: none;
   border-radius: 20px 20px 0px 0px;
-  background-color: green;
+  background-color: #EDE5D8;
 }
 
-button{
+button {
   display: inline-block;
   height: auto;
   width: 15%;
@@ -29,12 +28,16 @@ button{
   margin-left: 0.3%;
   border: none;
   border-radius: 5px 5px 0px 0px;
-  background-color: #007bff; /* Default button color */
-  color: #fff; /* Default text color */
+  background-color: #D3CBBE;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.clicked{
+  background-color: #E1C79C;
 }
