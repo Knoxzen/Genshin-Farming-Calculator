@@ -20,7 +20,7 @@ export class CharLevelUp3Component {
   blue2: number | undefined;
 
 
-  ResGreen(): void {
+  calc(): void {
     if (
       this.grey !== undefined &&
       this.green !== undefined &&
