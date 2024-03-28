@@ -9,29 +9,54 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './talent-level-up-3.component.css'
 })
 export class TalentLevelUp3Component {
-  a: number | undefined;
-  b: number | undefined;
-  c: number | undefined;
-  result: number | null = null;
+  green: number | undefined;
+  blue: number | undefined;
+  purple: number | undefined;
+  green1: number | undefined;
+  blue1: number | undefined;
+  purple1: number | undefined;
+  green2: number | undefined;
+  blue2: number | undefined;
+  purple2: number | undefined;
 
-  calculate(): void {
-    if (this.a !== undefined && this.b !== undefined && this.c !== undefined) {
-      if (this.a === 0 && this.b === 0 && this.c === 0) {
+
+  calc(): void {
+    if (
+      this.green !== undefined &&
+      this.blue !== undefined &&
+      this.purple !== undefined
+    ) {
+      if (this.green === 0 && this.blue === 0 && this.purple === 0) {
         // Handle division by zero error
-        this.result = null;
-      } else {
-        this.result = Math.floor((this.a/3 + this.b)/3 + this.c);
+        this.green = undefined;
+        this.blue = undefined;
+        this.purple = undefined;
+      }
+      // Main Logic for Calculating blue Mats
+      else {
+        this.blue1 = Math.floor(this.green / 3 + this.blue);
+        this.green1 = this.green % 3;
+        this.purple1 = this.purple;
+
+        this.purple2 = Math.floor((this.green / 3 + this.blue) / 3 + this.purple);
+        this.blue2 = Math.floor(this.green / 3 + this.blue) % 3;
+        this.green2 = this.green % 3;
       }
     } else {
-      // Handle case where not all values are defined
-      this.result = null;
+      this.green = undefined;
+      this.blue = undefined;
+      this.purple = undefined;
     }
   }
-
   clear(): void {
-    this.a = undefined;
-    this.b = undefined;
-    this.c = undefined;
-    this.result = null;
+    this.green = undefined;
+    this.blue = undefined;
+    this.purple = undefined;
+    this.green1 = undefined;
+    this.blue1 = undefined;
+    this.purple1 = undefined;
+    this.green2 = undefined;
+    this.blue2 = undefined;
+    this.purple2 = undefined;
   }
 }

@@ -1,21 +1,48 @@
-<div class="calculator">
-    <div class="inputs">
-        <div class="input-group">
-            <label for="a">Enter the value of a:</label>
-            <input type="number" autocomplete="off" id="a" name="a" [(ngModel)]="a">
+<div class="Main">
+    <div class="mainContainer">
+        <div class="calculator">
+            <div class="inputs">
+                <div class="input-group">
+                    <input class="greenC" type="number" autocomplete="off" id="green" name="green" [(ngModel)]="green">
+                </div>
+                <div class="input-group">
+                    <input class="blueC" type="number" autocomplete="off" id="blue" name="blue" [(ngModel)]="blue">
+                </div>
+                <div class="input-group">
+                    <input class="purpleC" type="number" autocomplete="off" id="purple" name="purple" [(ngModel)]="purple">
+                </div>
+            </div>
+            <div class="Buttonset">
+                <button class="calculate-btn" (click)="calc()">Calculate</button>
+                <button class="clear-btn" (click)="clear()">Clear</button>
+            </div>
         </div>
-        <div class="input-group">
-            <label for="b">Enter the value of b:</label>
-            <input type="number" autocomplete="off" id="b" name="b" [(ngModel)]="b">
+        <div class="ResBox">
+            <div class="whiteBox">
+                <div class="boxGrid">
+                    <div class="boxgreen Box">
+                        <p>{{ green1 }}</p>
+                    </div>
+                    <div class="boxblue Box ">
+                        <p>{{ blue1 }}</p>
+                    </div>
+                    <div class="boxpurple Box">
+                        <p>{{ purple1 }}</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="boxGrid">
+                    <div class="boxgreen Box">
+                        <p>{{ green2 }}</p>
+                    </div>
+                    <div class="boxblue Box">
+                        <p>{{ blue2 }}</p>
+                    </div>
+                    <div class="boxpurple Box">
+                        <p>{{ purple2 }}</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="input-group">
-            <label for="c">Enter the value of c:</label>
-            <input type="number" autocomplete="off" id="c" name="c" [(ngModel)]="c">
-        </div>
-        <button class="calculate-btn" (click)="calculate()">Calculate</button>
-    </div>
-    <div class="result">
-        <p>The result is: {{ result }}</p>
-        <button class="clear-btn" (click)="clear()">Clear</button>
     </div>
 </div>

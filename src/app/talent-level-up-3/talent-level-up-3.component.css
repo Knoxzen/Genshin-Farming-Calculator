@@ -1,0 +1,112 @@
+.Main {
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    width: 55%;
+
+}
+
+.calculator {
+    flex-grow: 3;
+    background-color: #EDE5D8;
+    padding: 2%;
+}
+
+.input-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: xx-large;
+    padding: 10px;
+    border: none;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+.Buttonset {
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    justify-content: space-between;
+}
+
+.ResBox {
+    flex-grow: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EDE5D8;
+
+}
+
+.whiteBox {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 2%;
+    justify-content: center;
+}
+
+
+.Box {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.boxGrid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.divider {
+    text-align: center;
+    width: 60%;
+    height: 1px;
+    background-color: #d5cab5;
+    margin: 2% 20%;
+}
+
+/* Styles for the button */
+button {
+    /* Customize the following styles as needed */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 30%;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3;
+    /* Darker shade of the button color on hover */
+}
+
+/* Disabled state */
+button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
