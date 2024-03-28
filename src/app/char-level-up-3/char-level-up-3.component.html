@@ -1,50 +1,52 @@
-<div class="Main">
-    <div class="calculator">
-        <div class="inputs">
-            <div class="input-group">
-                <label for="grey">Enter the value of Grey:</label>
-                <input type="number" autocomplete="off" id="grey" name="grey" [(ngModel)]="grey">
+<div class="mainMain">
+    <div class="Main">
+        <div class="calculator">
+            <div class="inputs">
+                <div class="input-group">
+                    <label for="grey">Enter the value of Grey:</label>
+                    <input type="number" autocomplete="off" id="grey" name="grey" [(ngModel)]="grey">
+                </div>
+                <div class="input-group">
+                    <label for="green">Enter the value of Green:</label>
+                    <input type="number" autocomplete="off" id="green" name="green" [(ngModel)]="green">
+                </div>
+                <div class="input-group">
+                    <label for="blue">Enter the value of Blue:</label>
+                    <input type="number" autocomplete="off" id="blue" name="blue" [(ngModel)]="blue">
+                </div>
             </div>
-            <div class="input-group">
-                <label for="green">Enter the value of Green:</label>
-                <input type="number" autocomplete="off" id="green" name="green" [(ngModel)]="green">
+            <div class="Buttonset">
+                <button class="calculate-btn" (click)="ResGreen()">Calculate</button>
+                <button class="clear-btn" (click)="clear()">Clear</button>
             </div>
-            <div class="input-group">
-                <label for="blue">Enter the value of Blue:</label>
-                <input type="number" autocomplete="off" id="blue" name="blue" [(ngModel)]="blue">
-            </div>
+    
         </div>
-        <div class="Buttonset">
-            <button class="calculate-btn" (click)="ResGreen()">Calculate</button>
-            <button class="clear-btn" (click)="clear()">Clear</button>
-        </div>
-
-    </div>
-    <!-- <div class="result">
-        <p>The result is: {{ result }}</p>
-        
-    </div> -->
-    <div class="ResBox">
-        <div class="Box1">
-            <div class="Box">
-                <p>{{ grey1 }}</p>
+        <!-- <div class="result">
+            <p>The result is: {{ result }}</p>
+            
+        </div> -->
+        <div class="ResBox">
+            <div class="Box1">
+                <div class="Box">
+                    <p>{{ grey1 }}</p>
+                </div>
+                <div class="Box">
+                    <p>{{ green1 }}</p>
+                </div>
+                <div class="Box">
+                    <p>{{ blue1 }}</p>
+                </div>
             </div>
-            <div class="Box">
-                <p>{{ green1 }}</p>
-            </div>
-            <div class="Box">
-                <p>{{ blue1 }}</p>
-            </div>
-        </div>
-        <div class="Box2">
-            <div class="Box">
-                <p>{{ grey2 }}</p>
-            </div>
-            <div class="Box">
-                <p>{{ green2 }}</p>
-            </div>
-            <div class="Box">
-                <p>{{ blue2 }}</p>
+            <div class="Box2">
+                <div class="Box">
+                    <p>{{ grey2 }}</p>
+                </div>
+                <div class="Box">
+                    <p>{{ green2 }}</p>
+                </div>
+                <div class="Box">
+                    <p>{{ blue2 }}</p>
+                </div>
             </div>
         </div>
     </div>
