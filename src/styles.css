@@ -1,0 +1,44 @@
+#grey {
+    background-image: url(assets/input-Tab-1-star.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #EDE5D8;
+}
+
+#green {
+    background-image: url(assets/input-Tab-2-star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #EDE5D8;
+}
+
+#blue {
+    background-image: url(assets/input-Tab-3-star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #EDE5D8;
+}
+
+.boxgrey {
+    background-image: url(assets/background-image-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.boxgreen {
+    background-image: url(assets/background-image-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.boxblue {
+    background-image: url(assets/background-image-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
