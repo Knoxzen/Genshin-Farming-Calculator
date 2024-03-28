@@ -1,22 +1,40 @@
-
-.module-selector {
+.container{
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+  background-color: blue;
+}
 
-  button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+.module-selector{
+  height: 95px;
+  width: 55%;
+  
+}
 
-  .clicked{
-    background-color: #ffdf0c;
-    
-  }
+.buttonSet{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 95px;
+  border-color: none;
+  border-radius: 20px 20px 0px 0px;
+  background-color: green;
+}
+
+button{
+  display: inline-block;
+  height: auto;
+  width: 15%;
+  padding: 10px 20px;
+  margin-left: 0.3%;
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #007bff; /* Default button color */
+  color: #fff; /* Default text color */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
