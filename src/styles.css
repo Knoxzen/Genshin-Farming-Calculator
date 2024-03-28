@@ -22,6 +22,22 @@
     background-color: #EDE5D8;
 }
 
+#purple{
+    background-image: url(assets/input-Tab-4-star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #EDE5D8;
+}
+
+#gold{
+    background-image: url(assets/input-Tab-5-star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #EDE5D8;
+}
+
 .boxgrey {
     background-image: url(assets/background-image-1.png);
     background-size: cover;
@@ -43,9 +59,24 @@
     border-radius: 10px;
 }
 
+.boxpurple {
+    background-image: url(assets/background-image-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.boxgold {
+    background-image: url(assets/background-image-5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
 body{
     background-image: url(assets/bg-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
