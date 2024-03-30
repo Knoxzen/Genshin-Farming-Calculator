@@ -1,40 +1,49 @@
+@font-face {
+    font-family: 'Genshin';
+    src: url(assets/font/zh-cn.ttf);
+}
+
+body{
+    font-family: 'Genshin';
+}
+
 #grey {
     background-image: url(assets/input-Tab-1-star.png);
-    background-size: contain;
-    background-position: center;
+    background-size: 100% 100%;
+    background-position: end;
     background-repeat: no-repeat;
     background-color: #EDE5D8;
 }
 
 #green {
     background-image: url(assets/input-Tab-2-star.png);
-    background-size: contain;
+    background-size: 100% 100%;
+    background-position: end;
     background-repeat: no-repeat;
-    background-position: center;
     background-color: #EDE5D8;
 }
 
 #blue {
     background-image: url(assets/input-Tab-3-star.png);
-    background-size: contain;
+    background-size: 100% 100%;
+    background-position: end;
     background-repeat: no-repeat;
-    background-position: center;
     background-color: #EDE5D8;
 }
 
 #purple{
     background-image: url(assets/input-Tab-4-star.png);
-    background-size: contain;
+    background-size: 100% 100%;
+    background-position: end;
     background-repeat: no-repeat;
-    background-position: center;
     background-color: #EDE5D8;
 }
 
 #gold{
     background-image: url(assets/input-Tab-5-star.png);
-    background-size: contain;
+    background-size: 100% 100%;
+    background-position: end;
     background-repeat: no-repeat;
-    background-position: center;
     background-color: #EDE5D8;
 }
 
