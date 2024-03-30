@@ -82,5 +82,9 @@ export class WeaponStone4Component {
     this.blue2 = undefined;
     this.purple2 = undefined;
     this.gold2 = undefined;
+    this.green3 = undefined;
+    this.blue3 = undefined;
+    this.purple3 = undefined;
+    this.gold3 = undefined;
   }
 }

@@ -24,6 +24,7 @@
 }
 
 input {
+    font-family: 'Genshin';
     font-size: xx-large;
     padding: 10px;
     border: none;
@@ -87,21 +88,21 @@ input:focus {
 
 /* Styles for the button */
 button {
-    /* Customize the following styles as needed */
-    background-color: #007bff;
-    color: #fff;
+    font-family: 'Genshin';
+    background-color: #ffffff;
+    color: #201900;
     border: none;
     width: 30%;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
 }
 
 /* Hover effect */
 button:hover {
-    background-color: #0056b3;
+    background-color: #d3bc8e;
     /* Darker shade of the button color on hover */
 }
 

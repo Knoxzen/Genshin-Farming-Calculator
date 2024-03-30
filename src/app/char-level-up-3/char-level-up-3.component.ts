@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -18,7 +20,6 @@ export class CharLevelUp3Component {
   grey2: number | undefined;
   green2: number | undefined;
   blue2: number | undefined;
-
 
   calc(): void {
     if (
