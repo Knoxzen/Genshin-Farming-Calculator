@@ -1,7 +1,12 @@
-<nav class="navbar">
-    <h2>Genhsin Calculator</h2>
-  </nav>
+<div class="wrap">
+  <app-navbar></app-navbar>
   <div class="module-selector">
     <app-mod-selector></app-mod-selector>
   </div>
-  <router-outlet></router-outlet>
+  <div class="router">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="info">
+    <app-info></app-info>
+  </div>
+</div>

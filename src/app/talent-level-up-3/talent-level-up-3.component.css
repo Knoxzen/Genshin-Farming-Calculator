@@ -24,6 +24,7 @@
 }
 
 input {
+    color: #161615;
     font-family: 'Genshin';
     font-size: xx-large;
     padding: 10px;
@@ -65,6 +66,7 @@ input:focus {
 
 
 .Box {
+    color: #161615;
     height: 100px;
     width: 100px;
     margin: 5px;
