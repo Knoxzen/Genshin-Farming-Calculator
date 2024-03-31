@@ -14,4 +14,13 @@
 
 .text-part-info{
     padding: 2%;
+    padding-bottom: 0%;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+ol{
+    font-weight: lighter;
 }
