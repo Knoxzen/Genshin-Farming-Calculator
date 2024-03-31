@@ -1,0 +1,17 @@
+:host{
+    width: 55%;
+    background: #EDE5D8;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.holder{
+    border-top: 1px solid #d5cab5;
+    background-color: #EDE5D8;
+    align-items: center;
+
+}
+
+.text-part-info{
+    padding: 2%;
+}
