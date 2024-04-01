@@ -1,27 +1,30 @@
-# GenshinCalculator
+# Genshin Impact Crafting Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+This web application is designed to assist players of Genshin Impact in calculating the materials needed for various crafting purposes, such as character level-up materials, weapon ascension materials, talent level-up books, or elemental stones. The calculator eliminates the need for manual calculations by providing a user-friendly interface.
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To use the Genshin Impact Crafting Calculator, follow these steps:
 
-## Code scaffolding
+1. **Select Material Type**: Choose the type of material you are farming from the dropdown menu. Options include character level-up materials, weapon ascension materials, talent level-up books, or elemental stones.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. **Enter Values**: Input the desired quantities of materials in the corresponding fields.
 
-## Build
+3. **Calculate**: Click the "Calculate" button to generate results.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. **Review Results**: The calculator will display all possible conversions based on the entered values. Note the changes displayed in the results table:
+    - Row one shows the changes from input 1 to 2.
+    - Row two shows the changes from inputs 1+2 to 3.
+    - Row three shows the changes from inputs 1+2+3 to 4.
 
-## Running unit tests
+## Live Website
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Explore the live version of the Genshin Impact Crafting Calculator [here](https://genshin-crafting-calculator.vercel.app/). 
 
-## Running end-to-end tests
+## Additional Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+In the navigation bar of the website, users can find the calculator icon representing the Genshin Enhancement Progression Calculator. This tool allows users to check the amount of materials needed and calculate additional requirements.
 
-## Further help
+## Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contributions to the project are welcome! If you find any bugs or have suggestions for improvement, please feel free to open an issue or submit a pull request.
